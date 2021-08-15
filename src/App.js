@@ -1,7 +1,7 @@
 import './App.css';
 import MainHeader from './layout/Header';
 import { BrowserRouter as Router, 
-  Route,Switch
+  Route,Switch,Redirect
 } from 'react-router-dom';
 import Home from './view/home';
 import About from './view/About';
@@ -20,6 +20,9 @@ function App() {
                 <Route path="/distributors" component={DistributionPage} exact={true}  />
                 <Route path="/Contact" component={ContactUs} exact={true}  />
                 <Route path="/viewProduct/:id" component={viewProduct} exact={true}  />
+                <Route path="/" exact >
+                <Redirect to="/home" />
+                </Route>
             </MainHeader>
         </Switch>
         </Router> 
