@@ -1,0 +1,492 @@
+/*
+--------------------------------------------------
+Home Page
+--------------------------------------------------
+*/
+.hm-about-sec {
+    position: relative;
+    padding: 4rem 0rem 7rem;
+
+    @media(min-width:992px) {
+        padding: 7rem 0rem 7.4rem;
+    }
+
+    .hm-about__inner {
+        position: relative;
+
+        h2 {
+            font-size: 1.625rem;
+            line-height: 2.25rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 2rem;
+
+            @media(min-width:992px) {
+                font-size: 2.5rem;
+                line-height: 3.125rem;
+            }
+
+            @media(min-width:1200px) {
+                padding-right: 4rem;
+            }
+        }
+
+        .hm-about__desc {
+            font-size: 0.9375rem;
+            font-family: 'Cabin', sans-serif;
+            color: #1A1A1A;
+            line-height: 1.875rem;
+            font-weight: 400;
+            p{
+                white-space: pre-line;
+            }
+
+            @media(min-width:1200px) {
+                padding-right: 6rem;
+            }
+        }
+    }
+
+    .hm-about__image {
+        width: calc(100% - 30px);
+        height: calc(100% - 40px);
+        margin-bottom: 40px;
+        // min-height: 500px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../../images/icons/trianglr-shape-lg.svg');
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 400px;
+            right: 0;
+            bottom: -40px;
+            z-index: -1;
+        }
+    }
+}
+
+.shape-triangle {
+    width: 0;
+    height: 0;
+    border-top: 170px solid #000;
+    border-right: 170px solid transparent;
+}
+
+/*
+--------------------------------------------------
+Request Callback
+--------------------------------------------------
+*/
+.request-call-back {
+    padding: 5.2rem 0rem 2rem;
+
+    .form-desc {
+
+        .media {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+
+            .media-image {
+                width: 60px;
+                margin-right: 20px;
+            }
+
+            .media-body {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                color: #fff;
+
+                .media-title {
+                    font-size: 1.625rem;
+                    line-height: 2.25rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+
+
+                    @media(min-width:992px) {
+                        font-size: 2.5rem;
+                        line-height: 3.125rem;
+                    }
+                }
+
+                .media-title-sm {
+                    font-size: 0.9375rem;
+                    font-family: 'Cabin', sans-serif;
+                    line-height: 1.875rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .request-form {
+        display: flex;
+        font-family: 'Cabin', sans-serif;
+        flex-wrap: wrap;
+
+        .form-group {
+            padding: 0px 0px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            height: 60px;
+            font-size: 0.9375rem;
+            border: none;
+        }
+
+        .cta-submit-request {
+            height: 60px;
+            min-width: 190px;
+            border-radius: 5px;
+            background-color: #0087C3;
+            color: #fff;
+            font-family: 'Cabin', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                border-radius: 0rem;
+            }
+        }
+
+        @media(min-width:992px) {
+            .form-group {
+                width: 50%;
+                padding: 0px 5px;
+            }
+
+            .cta-submit-request {
+                margin: 0px 5px;
+            }
+        }
+
+        @media(min-width:1200px) {
+            .form-group {
+                width: 210px;
+            }
+        }
+    }
+}
+
+/*
+--------------------------------------------------
+Section Main Heading
+--------------------------------------------------
+*/
+
+.main-header {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+    @media(min-width:992px) {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+    }
+
+    @media(min-width:1200px) {}
+}
+
+.main-header-desc {
+    font-size: 0.9375rem;
+    font-family: 'Cabin', sans-serif;
+    color: #1A1A1A;
+    line-height: 1.875rem;
+    font-weight: 400;
+
+    @media(min-width:1200px) {}
+}
+
+/*
+--------------------------------------------------
+Service List
+--------------------------------------------------
+*/
+
+.sec-service-list {
+    padding-top: 4.4rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+
+
+    .service-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
+        height: 100%;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid transparent;
+
+        .service-card__inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card__media {
+            overflow: hidden;
+
+            img {
+                transform: scale(1);
+                transition: all 0.5s ease-out;
+            }
+        }
+
+        .service-card__title {
+            font-size: 1.125rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #000000;
+            line-height: 1.75rem;
+            transition: all 0.3s ease-out;
+        }
+
+        .service-card__desc {
+            font-size: 14px;
+            color: #1A1A1A;
+            line-height: 1.5625rem;
+            font-family: 'Cabin', sans-serif;
+            padding-bottom: 0.6rem;
+        }
+
+
+        .service-card__info {
+            width: 100%;
+            height: 100%;
+        }
+
+        .service-card__content {
+            padding: 25px 10px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .service-card__footer {
+            a {
+                font-size: 0.9375rem;
+                text-transform: capitalize;
+                color: #0087C3;
+                font-weight: 700;
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                position: relative;
+                transition: all 0.2s ease-in-out;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 0%;
+                    background: #000;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                &:hover {
+                    color: #000;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            border-radius: 0rem;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07%);
+
+            // box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .05);
+            .service-card__media {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+
+            .service-card__title {
+                color: #0087C3;
+            }
+        }
+    }
+
+    @media(min-width:992px) {
+        padding-top: 7.4rem;
+
+    }
+}
+
+.service-list-bg {
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 369px;
+        background-color: rgba(242, 242, 242, 0.8);
+        z-index: -1;
+        width: 100%;
+    }
+}
+
+/*
+--------------------------------------------------
+Enquiry Form
+--------------------------------------------------
+*/
+.enquiry-area {
+    background-color: rgba(242, 242, 242, 0.8);
+    padding-top: 3.6rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: #000;
+        bottom: 0;
+        width: 100%;
+        height: calc(100% - 214px);
+        z-index: -1;
+    }
+
+    .enquiry-area__inner {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.10);
+        padding: 3.6rem 1.5rem 0rem;
+    }
+
+    @media(min-width:992px) {
+        .enquiry-area__inner {
+            border-radius: 20px;
+            padding: 3.60rem 3rem 0rem;
+        }
+    }
+
+
+    .contact-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: 2.5rem;
+
+        .contact-info__media {
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            background-color: rgba(0, 135, 195, 0.10);
+            margin-right: 2rem;
+            flex: none;
+        }
+
+        .contact-info__body {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            font-family: 'Cabin', sans-serif;
+
+            .contact-info__title {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                font-weight: 700;
+            }
+
+            ul {
+                padding: 0rem 0rem;
+                margin: 0rem 0rem;
+                list-style: none;
+
+                li {
+                    font-size: 0.9375rem;
+                    line-height: 1.75rem;
+                    font-weight: 500;
+
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.enquiry-area__form {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-control {
+        min-height: 50px;
+        background-color: #f2f2f2;
+        border-radius: 6px;
+        border: none;
+        resize: none;
+        font-size: 0.9375rem;
+        color: #000;
+        padding: 1rem 1.6rem;
+    }
+
+    .enquiry-area__form-title {
+        font-size: 1.625rem;
+        line-height: 2.25rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-bottom: 2rem;
+
+        @media(min-width:992px) {
+            font-size: 2.5rem;
+            line-height: 3.125rem;
+        }
+
+        @media(min-width:1200px) {}
+    }
+
+    .cta-enquiry-form {
+        background: #fff;
+        border: 1px solid #0087C3;
+        height: 46px;
+        color: #0087C3;
+        font-family: 'Cabin', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        min-width: 138px;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            color: #fff;
+            background-color: #0087C3;
+        }
+    }
+}

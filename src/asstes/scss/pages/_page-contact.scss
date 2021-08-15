@@ -1,0 +1,178 @@
+/*
+--------------------------------------------------
+Contact Form
+--------------------------------------------------
+*/
+.contact-section {
+    width: 100%;
+    padding-top: 4.2rem;
+    padding-bottom: 3.6rem;
+
+    .conact-aside {
+        background-color: #0087C3;
+        width: 100%;
+        border-radius: 10px;
+        color: #fff;
+        padding: 2rem 1.2rem;
+        margin-bottom: 30px;
+
+        .conact-aside__title {
+            font-size: 2.1875rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 2.625rem;
+            margin-bottom: 2.6rem;
+        }
+
+        .media {
+            font-family: 'Poppins', sans-serif;
+
+            .media-image {
+                width: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 0.5rem;
+            }
+
+            .media-body__title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 0.4rem;
+            }
+
+            .media-body__desc {
+                font-size: 0.9375rem;
+                line-height: 1.56rem;
+            }
+
+            a {
+                color: #fff;
+                position: relative;
+                margin-bottom: 0.5rem;
+                overflow: hidden;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    background-color: #fff;
+                    width: 0%;
+                    transition: all 0.3s ease-out;
+                }
+
+                &:hover {
+
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        width: 100%;
+        border: 1px solid #707070;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        padding: 2.5rem 1rem;
+        background-color: #fff;
+
+        .contact-form__block {
+            .form-group {
+                margin-bottom: 40px;
+            }
+
+            .form-control {
+                min-height: 60px;
+                background-color: #F2F2F2;
+                border-radius: 6px;
+                border: none;
+                resize: none;
+                font-size: 0.9375rem;
+                font-family: "Poppins", sans-serif;
+                color: #000;
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+
+    .cta-submit-form {
+        background: #fff;
+        border: 1px solid #0087C3;
+        height: 46px;
+        color: #0087C3;
+        font-family: 'Cabin', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        min-width: 138px;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            color: #fff;
+            background-color: #0087C3;
+        }
+    }
+
+    @media(min-width:992px) {
+        .contact-form {
+            padding: 3rem 1rem 2rem;
+            padding-left: 13.125rem;
+            width: calc(100% - 15.625rem);
+            margin-left: auto;
+            border-radius: 10px;
+        }
+
+        .contact-form__block {
+            padding: 0px 15px;
+        }
+
+        .conact-aside {
+            width: 28.75rem;
+            position: absolute;
+            left: 0;
+            height: calc(100% - 2.25rem);
+            top: 1.125rem;
+            padding: 2.6rem 3.6rem;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/*
+--------------------------------------------------
+Map Section
+--------------------------------------------------
+*/
+.map-section {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    .map-desc__title {
+        font-size: 2.1875rem;
+        font-weight: 700;
+        line-height: 2.625rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .map-desc__content {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    .map-container {
+        height: 480px;
+        width: 100%;
+        border-radius: 6px 6px;
+        overflow: hidden;
+    }
+
+    @media(min-width:992px) {
+        padding-top: 3.8rem;
+        padding-bottom: 6rem;
+    }
+
+}

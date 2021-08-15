@@ -1,0 +1,119 @@
+/*
+--------------------------------------------------
+Distributors carousel
+--------------------------------------------------
+*/
+
+
+.btn-slider-l,
+.btn-slider-r {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    padding: 0rem 0rem;
+
+    @media(max-width:767px) {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.btn-slider-l img,
+.btn-slider-r img {
+    width: 100%;
+}
+
+.btn-slider-l {
+    position: absolute;
+    left: 0;
+}
+
+.btn-slider-r {
+    position: absolute;
+    right: 0;
+}
+
+.slider-distributors {
+    .owl-item {
+        z-index: -99;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background: #fff;
+            width: calc(100% + 70px);
+            height: calc(100% + 35px);
+            z-index: -2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.10);
+            transition: all 0.3s ease-out;
+        }
+    }
+
+    .owl-stage {
+        margin: 2.9875rem 0rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    @media(min-width:768px) {
+        .owl-item.active.center {
+            z-index: 10;
+
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .distibutors-list {
+                background-color: #fff;
+                padding: 1.875rem 0.5rem;
+
+                .distibutors-list__title-sm {
+                    font-size: 1.1875rem;
+                }
+
+                .distibutors-list__title-lg {
+                    font-size: 1.5rem;
+                }
+
+            }
+        }
+    }
+}
+
+/*
+--------------------------------------------------
+Common Styles
+--------------------------------------------------
+*/
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 5px;
+    height: 5px;
+    margin: 5px 5px;
+    background: #D6D6D6;
+    display: block;
+    border-radius: 50%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #0087c3;
+}

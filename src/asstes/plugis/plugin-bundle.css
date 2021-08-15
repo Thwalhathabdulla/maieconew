@@ -1,0 +1,14 @@
+/**
+*************************************************************************************************
+    CSS Plugins Index
+    ----------------------
+    01. Owl carousel
+    02. Odometer
+    03. Animate 
+  
+***************************************************************************************************/
+
+@import "./owl/assets/owl.carousel.min.css";
+@import "./owl/assets/owl.theme.default.min.css";
+@import "./odometer/odometer.css";
+@import "./animate/animate.css";

@@ -1,0 +1,16 @@
+// Frame Work
+@import "./framework/bootstrap/bootstrap.scss";
+// Pages
+@import "./pages/utilities";
+@import "./pages/navbar";
+@import "./pages/banner-template";
+@import "./pages/home-page";
+@import "./pages/owl-carousel-main";
+// Inner Pages
+@import "./pages/page-about";
+@import "./pages/page-products";
+@import "./pages/page-contact";
+// Footer
+@import "./pages/footer";
+// Animate
+@import "./pages/animate";

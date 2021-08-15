@@ -1,0 +1,16 @@
+/*
+--------------------------------------------------
+Home Page
+--------------------------------------------------
+*/
+.hm-about-sec {
+  position: relative; }
+  .hm-about-sec .hm-about__inner {
+    padding: 0rem 0rem;
+    background-color: pink; }
+
+.shape-triangle {
+  width: 0;
+  height: 0;
+  border-top: 170px solid #000;
+  border-right: 170px solid transparent; }

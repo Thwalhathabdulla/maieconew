@@ -1,0 +1,264 @@
+/*
+--------------------------------------------------
+Google Font
+--------------------------------------------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+--------------------------------------------------
+Bg Image
+--------------------------------------------------
+*/
+.bg-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+--------------------------------------------------
+
+--------------------------------------------------
+*/
+a {
+    text-decoration: none;
+}
+
+/*
+--------------------------------------------------
+Input
+--------------------------------------------------
+*/
+input:focus,
+.form-control:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/*
+--------------------------------------------------
+Button
+--------------------------------------------------
+*/
+button:focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+/*
+--------------------------------------------------
+Background Colors
+--------------------------------------------------
+*/
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-light-grey {
+    background-color: #f5f5f5;
+}
+
+/*
+--------------------------------------------------
+Margins
+--------------------------------------------------
+*/
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-2rem {
+    margin-bottom: 2rem !important;
+}
+
+.mt-gap-70 {
+    padding-top: 3.6rem !important;
+}
+
+.mt-40 {
+    margin-top: 2.5rem;
+}
+
+.gap-product-list {
+    padding-top: 5.4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+/*
+--------------------------------------------------
+Media Object
+--------------------------------------------------
+*/
+.media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+
+/*
+--------------------------------------------------
+Media Object
+--------------------------------------------------
+*/
+.ratingModal {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .btn-modal-close {
+        position: absolute;
+        right: 1.5rem;
+        top: 2.625rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        border: none;
+        outline: 0;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        z-index: 10;
+    }
+
+    .modal-dialog {
+        max-width: 881px;
+
+        .modal-content {
+            border: none;
+            border-radius: 1.25rem;
+            outline: 0;
+        }
+    }
+
+    .modal-body {
+        padding: 2rem 2rem 2rem;
+
+        .modal-body__content {
+            font-family: 'Poppins', sans-serif;
+
+            h4 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 2.4rem;
+            }
+        }
+    }
+
+    @media(min-width:992px) {
+        .modal-body {
+            padding: 4.0625rem 2rem 2rem;
+
+            .modal-body__content {
+
+                h4 {
+                    font-size: 2.3125rem;
+                    margin-bottom: 3.4rem;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+--------------------------------------------------
+Rating Star
+--------------------------------------------------
+*/
+
+.c-rating-star {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.c-rating-star__item {
+    display: inline-block;
+}
+
+.c-rating-star__icon {
+    font-size: 36px;
+}
+
+.c-rating-star__item.is-hover>.c-rating-star__icon {
+    color: #FFC107;
+}
+
+.c-rating-star__item.is-selected {
+    svg {
+        path {
+            fill: #FFC107;
+            stroke: #FFC107;
+            box-shadow: 2px 2px 5px rgba(255, 193, 7, 0.20);
+        }
+    }
+}
+
+.rating-star {
+    margin-bottom: 3.4rem;
+
+    .rating-star__title {
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+}
+
+.rating-star-msg {
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    font-size: 0.9375rem;
+    resize: none;
+
+    &:focus {
+        background-color: #F2F2F2;
+    }
+}
+
+.cta-rating-submit {
+    background: #fff;
+    border: 1px solid #0087C3;
+    height: 46px;
+    color: #0087C3;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    min-width: 138px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: #fff;
+        background-color: #0087C3;
+    }
+}

@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import './asstes/scss/style.scss';
+// import './asstes/plugis/plugin-bundle.css';
+// import './asstes/plugis/plugin-bundle';
+// import './asstes/script/app'
 ReactDOM.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  // </React.StrictMode>
+  ,
   document.getElementById('root')
 );
 
